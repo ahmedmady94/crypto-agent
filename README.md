@@ -64,14 +64,14 @@ A sample **public trace** is shared above to demonstrate how the agent behaves d
 
 app/
 ├── agent/
-│   ├── graph.py          # LangGraph definition
-│   ├── system_prompt.py  # System instructions
-│   └── tools.py          # Tool implementations
+│   ├── graph.py          # LangGraph state machine definition
+│   ├── system_prompt.py  # Centralized LLM instructions
+│   └── tools.py          # Custom tool implementations
 ├── api/
-│   └── routes.py         # FastAPI endpoints
+│   └── routes.py         # FastAPI endpoint definitions
 ├── core/
-│   └── config.py         # Environment & LLM config
-└── main.py               # App entry point
+│   └── config.py         # Global settings & LLM configuration
+└── main.py               # Application entry point
 
 ---
 
