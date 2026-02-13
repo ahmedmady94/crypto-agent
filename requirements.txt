@@ -1,5 +1,6 @@
 fastapi[standard]
 langgraph
+langsmith
 langchain-openai
 langchain-core
 newsapi-python
