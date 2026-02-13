@@ -1,0 +1,8 @@
+fastapi[standard]
+langgraph
+langchain-openai
+langchain-core
+newsapi-python
+python-dotenv
+pydantic
+requests
