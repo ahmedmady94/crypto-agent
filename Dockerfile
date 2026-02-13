@@ -26,4 +26,5 @@ COPY app ./app
 EXPOSE 8000
 
 # 9. Run FastAPI via uvicorn
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# for local run (static port) : CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port $PORT"]
