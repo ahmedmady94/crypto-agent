@@ -62,3 +62,27 @@ A sample **public trace** is shared above to demonstrate how the agent behaves d
 
 ## 📦 Project Structure
 
+app/
+├── agent/
+│ ├── graph.py # LangGraph definition
+│ ├── tools.py # Tool implementations
+│ └── system_prompt.py
+├── api/
+│ └── routes.py # FastAPI endpoints
+├── core/
+│ └── config.py # Environment & LLM config
+└── main.py # App entry point
+
+
+---
+
+## 🧪 Running Locally
+
+```bash
+docker build -t crypto-agent .
+docker run -p 8000:8000 --env-file .env crypto-agent
+
+## 🧪 Then open:
+http://localhost:8000/docs
+
+
